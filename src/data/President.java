@@ -3,26 +3,26 @@ package data;
 import java.time.LocalDate;
 
 public class President {
+	private int termNumber;
 	private String name;
 	private String picURL;
-	private int termNumber;
 	private LocalDate termBeginDate;
 	private LocalDate termEndDate;
 	private String fact;
 	/**
+	 * @param termNumber
 	 * @param name
 	 * @param picURL
-	 * @param termNumber
 	 * @param termBeginDate
 	 * @param termEndDate
 	 * @param fact
 	 */
-	public President(String name, String picURL, int termNumber, LocalDate termBeginDate, LocalDate termEndDate,
-			String fact) {
+	public President(int termNumber, String name, String picURL,
+			LocalDate termBeginDate, LocalDate termEndDate, String fact) {
 		super();
+		this.termNumber = termNumber;
 		this.name = name;
 		this.picURL = picURL;
-		this.termNumber = termNumber;
 		this.termBeginDate = termBeginDate;
 		this.termEndDate = termEndDate;
 		this.fact = fact;
