@@ -13,11 +13,13 @@ import javax.servlet.ServletContext;
 
 public class PresidentDAOFileImpl implements PresidentDAO {
 	Map<Integer, President> presList = new HashMap<>();
+	President pres = new President();
 	ServletContext servletContext;
 	
 	public PresidentDAOFileImpl (ServletContext s){
 		servletContext = s;
 	}
+	
 	private void loadPresidentsInHashMap() {
 		InputStream is = servletContext .getResourceAsStream("presidents.csv");
 		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
@@ -27,11 +29,14 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 				Integer termNumber = Integer.parseInt(param[0]);
 				String firstName = param[1];
 				String lastName = param[2];
+				String startTerm = param[3];
+				String endTerm = param[4];
+				String party = param[5];
+				String picURL = param[6];
+				String fact = param[7];
 				
-				
-				double price = Double.parseDouble(param[2]);
-				President p = new President();
-				presList.put(termNumber, p);
+//				President p = new President();
+				presList.put(termNumber, pres);
 			}
 		} catch (Exception e) {
 			System.err.println(e);
@@ -46,21 +51,18 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 
 	@Override
 	public President getPresident(int termNumber) {
-		// TODO Auto-generated method stub
-		return null;
+		pres = presList.get(termNumber);
+		return pres;
 	}
 	@Override
-	public President getNextPresident() {
-		// TODO Auto-generated method stub
-		return null;
+	public President getNextPresident(int termNumber) {
+		pres = presList.get(termNumber + 1);
+		return pres;
 	}
 	@Override
-	public President getPreviousPresident() {
-		// TODO Auto-generated method stub
-		return null;
+	public President getPreviousPresident(int termNumber) {
+		pres = presList.get(termNumber - 1);
+		return pres;
 	}
-	
-	
-
-
+		
 }
