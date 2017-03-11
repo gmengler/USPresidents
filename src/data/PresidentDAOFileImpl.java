@@ -49,6 +49,16 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	@Override
+	public President getNextPresident() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public President getPreviousPresident() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 
