@@ -5,26 +5,29 @@ import java.time.LocalDate;
 public class President {
 	private int termNumber;
 	private String name;
-	private String picURL;
+	private String party;
 	private LocalDate termBeginDate;
 	private LocalDate termEndDate;
+	private String picURL;
 	private String fact;
 	/**
 	 * @param termNumber
 	 * @param name
-	 * @param picURL
+	 * @param party
 	 * @param termBeginDate
 	 * @param termEndDate
+	 * @param picURL
 	 * @param fact
 	 */
-	public President(int termNumber, String name, String picURL,
-			LocalDate termBeginDate, LocalDate termEndDate, String fact) {
+	public President(int termNumber, String name, String party, LocalDate termBeginDate, LocalDate termEndDate,
+			String picURL, String fact) {
 		super();
 		this.termNumber = termNumber;
 		this.name = name;
-		this.picURL = picURL;
+		this.party = party;
 		this.termBeginDate = termBeginDate;
 		this.termEndDate = termEndDate;
+		this.picURL = picURL;
 		this.fact = fact;
 	}
 	/**
@@ -32,6 +35,18 @@ public class President {
 	 */
 	public President() {
 		super();
+	}
+	/**
+	 * @return the termNumber
+	 */
+	public int getTermNumber() {
+		return termNumber;
+	}
+	/**
+	 * @param termNumber the termNumber to set
+	 */
+	public void setTermNumber(int termNumber) {
+		this.termNumber = termNumber;
 	}
 	/**
 	 * @return the name
@@ -46,28 +61,16 @@ public class President {
 		this.name = name;
 	}
 	/**
-	 * @return the picURL
+	 * @return the party
 	 */
-	public String getPicURL() {
-		return picURL;
+	public String getParty() {
+		return party;
 	}
 	/**
-	 * @param picURL the picURL to set
+	 * @param party the party to set
 	 */
-	public void setPicURL(String picURL) {
-		this.picURL = picURL;
-	}
-	/**
-	 * @return the termNumber
-	 */
-	public int getTermNumber() {
-		return termNumber;
-	}
-	/**
-	 * @param termNumber the termNumber to set
-	 */
-	public void setTermNumber(int termNumber) {
-		this.termNumber = termNumber;
+	public void setParty(String party) {
+		this.party = party;
 	}
 	/**
 	 * @return the termBeginDate
@@ -94,6 +97,18 @@ public class President {
 		this.termEndDate = termEndDate;
 	}
 	/**
+	 * @return the picURL
+	 */
+	public String getPicURL() {
+		return picURL;
+	}
+	/**
+	 * @param picURL the picURL to set
+	 */
+	public void setPicURL(String picURL) {
+		this.picURL = picURL;
+	}
+	/**
 	 * @return the fact
 	 */
 	public String getFact() {
@@ -105,6 +120,5 @@ public class President {
 	public void setFact(String fact) {
 		this.fact = fact;
 	}
-
 
 }
