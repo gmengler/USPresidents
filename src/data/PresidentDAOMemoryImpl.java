@@ -1,5 +1,6 @@
 package data;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -16,13 +17,14 @@ public class PresidentDAOMemoryImpl implements PresidentDAO {
 	@Override
 	public List<President> getAllPresidents() { // probably don't need
 		return new ArrayList<>(presList.values());
-		return null;
 	}
 
+
 	@Override
-	public List<President> findByTermNumber() {
+	public President getPresident(int termNumber) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
 
 }
