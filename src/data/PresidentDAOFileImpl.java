@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PresidentDAOMemoryImpl implements PresidentDAO {
+public class PresidentDAOFileImpl implements PresidentDAO {
 	Map<String, President> presList = new HashMap<>();
 	
 
