@@ -54,15 +54,23 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 		pres = presList.get(termNumber);
 		return pres;
 	}
-	@Override
-	public President getNextPresident(int termNumber) {
-		pres = presList.get(termNumber + 1);
-		return pres;
-	}
-	@Override
-	public President getPreviousPresident(int termNumber) {
-		pres = presList.get(termNumber - 1);
-		return pres;
-	}
-		
+	
+//	@Override
+//	public President getNextPresident(int termNumber) {
+//		if (termNumber > 45) {
+//			termNumber = 1;
+//		}
+//		pres = presList.get(termNumber + 1);
+//		return pres;
+//	}
+	
+//	@Override
+//	public President getPreviousPresident(int termNumber) {
+//		if (termNumber < 1) {
+//			termNumber = 45;
+//		}
+//		pres = presList.get(termNumber - 1);
+//		return pres;
+//	}
+	
 }
