@@ -15,6 +15,7 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>U.S. Presidents</title>
@@ -25,7 +26,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>Presidents of the United States</h1>
+				<h1 id="headline">Presidents of the United States</h1>
 			</div>
 		</div>
 		<br>
@@ -42,12 +43,14 @@
 				<form action="Presidents.do" method="POST">
 					<c:choose>
 						<c:when test="${not empty termNumberError}">
-  						<span class="text-danger">Invalid term number</span><br>
+  						<span class="text-danger"><strong>Invalid term number</strong></span><br>
 						</c:when>
 					</c:choose>
-					<label>Search by Term Number: <input type="text"
-						name="termNumber"> <input type="submit" value="submit"
-						name="getByTermNumber">
+					<label class="standard">Search by Term Number: <input class="black" type="text"
+						name="termNumber"> 
+						<!-- <input type="submit" value="submit" name="getByTermNumber"> -->
+						
+						<button type="submit" class="btn btn-default" name="getByTermNumber">Search</button>
 					</label>
 				</form>
 			</div>
@@ -64,15 +67,15 @@
 		<div class="row vertical-align">
 			<div class="col-md-2"></div>
 			<div class="col-md-4">
-				<form action="Presidents.do" method="POST">
+				<form class="standard" action="Presidents.do" method="POST">
 					<ul>
-						<li>Name: ${currentPresident.name}</li>
-						<li>Term Number: ${currentPresident.termNumber}</li>
-						<li>Party: ${currentPresident.party}</li>
-						<li>Presidency:</li>
-						<li>From: ${currentPresident.termBeginDate}</li>
-						<li>To: ${currentPresident.termEndDate}</li>
-						<li>Interesting Fact: ${currentPresident.fact}</li>
+						<li><span class="info">Name:</span> ${currentPresident.name}</li>
+						<li><span class="info">Term Number:</span> ${currentPresident.termNumber}</li>
+						<li><span class="info">Party:</span> ${currentPresident.party}</li>
+						<li><span class="info">Presidency:</span></li>
+						<li><span class="info">From:</span> ${currentPresident.termBeginDate}</li>
+						<li><span class="info">To:</span> ${currentPresident.termEndDate}</li>
+						<li><span class="info">Interesting Fact:</span> ${currentPresident.fact}</li>
 					</ul>
 				</form>
 			</div>
@@ -98,12 +101,14 @@
 				<form action="Presidents.do" method="POST">
 					<c:choose>
 						<c:when test="${not empty termNumberError}">
-  						Invalid term number<br>
+  						<span class="text-danger"><strong>Invalid term number</strong></span><br>
 						</c:when>
 					</c:choose>
-					<label>Search by Term Number: <input type="text"
-						name="termNumber"> <input type="submit" value="submit"
-						name="getByTermNumber">
+					<label class="standard">Search by Term Number: <input class="black" type="text"
+						name="termNumber"> 
+						<!-- <input type="submit" value="submit" name="getByTermNumber"> -->
+						
+						<button type="submit" class="btn btn-default" name="getByTermNumber">Search</button>
 					</label>
 				</form>
 			</div>

@@ -16,15 +16,12 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 	ServletContext servletContext;
 
 	public PresidentDAOFileImpl (ServletContext s){
-		System.out.println("test");
 		servletContext = s;
 		loadPresidentsInHashMap();
 	}
 
 	private void loadPresidentsInHashMap() {
-		System.out.println("before");
 		InputStream is = servletContext.getResourceAsStream("presidents.csv");
-		System.out.println("after");
 		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
 			String line;
 			while ((line = buf.readLine()) != null) {
@@ -38,7 +35,6 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 				String fact = param[6];
 				President pres = new President(termNumber, name, party, startTerm, endTerm, picURL, fact);
 				presList.put(termNumber, pres);
-				System.out.println(pres);
 
 			}
 		} catch (Exception e) {

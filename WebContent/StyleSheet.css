@@ -4,8 +4,24 @@ body {
 }
 
 h1 {
-	text-align: center;
+	text-align: center;	
+}
+
+.info {
+	font-weight: bold;
+	color: #cccccc;
+}
+
+#headline {
 	color: white;
+}
+
+.standard {
+	color: white;
+}
+
+.black {
+	color: black;
 }
 
 .vertical-align {
@@ -33,5 +49,3 @@ li {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
 		rgba(0, 0, 0, 0.19);
 }
-
-
