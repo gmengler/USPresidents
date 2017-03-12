@@ -118,6 +118,29 @@ public class President {
 	public void setFact(String fact) {
 		this.fact = fact;
 	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("President [termNumber=");
+		builder.append(termNumber);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", party=");
+		builder.append(party);
+		builder.append(", termBeginDate=");
+		builder.append(termBeginDate);
+		builder.append(", termEndDate=");
+		builder.append(termEndDate);
+		builder.append(", picURL=");
+		builder.append(picURL);
+		builder.append(", fact=");
+		builder.append(fact);
+		builder.append("]");
+		return builder.toString();
+	}
 
 
 }
