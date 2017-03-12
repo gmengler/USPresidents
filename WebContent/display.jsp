@@ -4,17 +4,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 <head>
- <link rel = "stylesheet"
-   type = "text/css"
-   href = "StyleSheet.css" />
+   <link href="StyleSheet.css" rel="stylesheet" type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>U.S. Presidents</title>
 </head>
 
 <body>
-<form action="Presidents.do" method="POST">
 <H1> UNITED STATES PRESIDENTS</H1>
-
+<form action="Presidents.do" method="POST">
 
               <img src="${currentPresident.picURL}" />
 			

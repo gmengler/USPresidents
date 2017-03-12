@@ -1,4 +1,12 @@
-html{
-	background-image:url ("https://static.decalgirl.com/assets/designs/large/patriotic.jpg");
 
+ html{
+    background-image: url("https://thechive.files.wordpress.com/2012/10/hurricane-guard-unknown-tomb-920-6.jpg?quality=85&strip=info&w=920");
+	  background-size: cover; 
+ }
+ 
+ li {
+  color: green;
+ }
+ label {
+ color:green;
  }
