@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+body{
+	background-image: url("https://upload.wikimedia.org/wikipedia/en/archive/a/a4/20151118161037%21Flag_of_the_United_States.svg");
+=======
 
  html{
     background-image: url("https://thechive.files.wordpress.com/2012/10/hurricane-guard-unknown-tomb-920-6.jpg?quality=85&strip=info&w=920");
@@ -9,4 +13,5 @@
  }
  label {
  color:green;
+>>>>>>> 06b6a2a1a1156c69e4bfc1813c39bf45d81ded26
  }
