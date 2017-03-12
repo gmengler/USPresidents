@@ -38,6 +38,7 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 				String fact = param[6];
 				President pres = new President(termNumber, name, party, startTerm, endTerm, picURL, fact);
 				presList.put(termNumber, pres);
+				System.out.println(pres);
 
 			}
 		} catch (Exception e) {
