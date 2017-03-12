@@ -63,6 +63,7 @@ public class PresidentServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		HttpSession session = request.getSession();
+
 		int termNumber;
 		if (session.getAttribute("currentPresident") == null) {
 			// first time
@@ -84,7 +85,16 @@ public class PresidentServlet extends HttpServlet {
 			}
 		}
 		else if(request.getParameter("getByTermNumber")!= null){
-			termNumber = Integer.valueOf(request.getParameter("termNumber"));
+			try {
+				termNumber = Integer.valueOf(request.getParameter("termNumber"));
+				if(presidentDAO.getPresident(termNumber) == null) {
+					throw new Exception();
+				}
+			} catch (Exception e) {
+				termNumber = 1;
+				request.setAttribute("termNumberError", "true");
+			}
+
 		}
 		session.setAttribute("currentPresident", presidentDAO.getPresident(termNumber));
 		session.setAttribute("currentlyDisplayedPresidentTermNumber", String.valueOf(termNumber));
