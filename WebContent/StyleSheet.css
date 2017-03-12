@@ -2,12 +2,30 @@ html {
 	background-image:
 		url("https://thechive.files.wordpress.com/2012/10/hurricane-guard-unknown-tomb-920-6.jpg?quality=85&strip=info&w=920");
 	background-size: cover;
+	
 }
 
 li {
-	color: green;
+    color: green;
+
 }
 
 label {
 	color: green;
+}
+
+
+
+.resize {
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+}
+
+.resize {
+	
+    width: 300px;
+    height: auto;
 }
