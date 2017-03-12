@@ -29,7 +29,7 @@
 		</ul>
 
 		<label>Search by Term Number: <input type="text"
-			name="termNumber">
+			name="termNumber">    <input type="submit" value="submit" name="getByTermNumber">
 		</label>
 
 	</form>
