@@ -13,19 +13,24 @@ import javax.servlet.ServletContext;
 
 public class PresidentDAOFileImpl implements PresidentDAO {
 	Map<Integer, President> presList = new HashMap<>();
-	President pres = new President();
 	ServletContext servletContext;
 
 	public PresidentDAOFileImpl (ServletContext s){
+		System.out.println("test");
 		servletContext = s;
+		loadPresidentsInHashMap();
 	}
 
 	private void loadPresidentsInHashMap() {
-		InputStream is = servletContext .getResourceAsStream("presidents.csv");
+		System.out.println("before");
+		InputStream is = servletContext.getResourceAsStream("presidents.csv");
+		System.out.println("after");
 		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
 			String line;
 			while ((line = buf.readLine()) != null) {
-				String[] param = line.split("	");
+				System.out.println(line);
+				String[] param = line.split("???");
+				System.out.println(param[0]);
 				Integer termNumber = Integer.parseInt(param[0]);
 				String name = param[1];
 				String startTerm = param[2];
@@ -33,9 +38,12 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 				String party = param[4];
 				String picURL = param[5];
 				String fact = param[6];
-
+				President pres = new President(termNumber, name, startTerm, endTerm, party, picURL, fact);
+				System.out.println(param[5]);
 //				President p = new President();
 				presList.put(termNumber, pres);
+				System.out.println(pres);
+				
 			}
 		} catch (Exception e) {
 			System.err.println(e);
@@ -50,7 +58,7 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 
 	@Override
 	public President getPresident(int termNumber) {
-		pres = presList.get(termNumber);
+		President pres = presList.get(termNumber);
 		return pres;
 	}
 
