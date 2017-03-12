@@ -28,7 +28,7 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
 			String line;
 			while ((line = buf.readLine()) != null) {
-				String[] param = line.split("\\?\\?\\?");
+				String[] param = line.split(" , ");
 				Integer termNumber = Integer.parseInt(param[0]);
 				String name = param[1];
 				String startTerm = param[2];

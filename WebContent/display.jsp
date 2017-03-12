@@ -16,6 +16,8 @@
 	<form action="Presidents.do" method="POST">
 
 		<img class ="resize" src="${currentPresident.picURL}" />
+<button class ="picture" type="submit" name="previous" > <img src = "http://www.iconninja.com/files/259/183/804/backward-arrow-blue-icon.png" ></button>
+<button class ="picture" type="submit" name="next" > <img src="http://www.iconninja.com/files/515/987/819/forward-arrow-next-icon.png"></button>
 
 		<ul>
 			<li>Name: ${currentPresident.name}</li>

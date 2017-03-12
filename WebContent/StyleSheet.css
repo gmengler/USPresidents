@@ -29,3 +29,7 @@ label {
     width: 300px;
     height: auto;
 }
+.picture{
+	
+background-size: cover;
+}
