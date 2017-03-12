@@ -36,19 +36,10 @@ public class PresidentServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-<<<<<<< HEAD
-=======
-		String initialLoad = request.getParameter("load");
-		ServletContext context = getServletContext();
-		PresidentDAO stockDAO = (PresidentDAO)context.getAttribute("PresidentDAO");
->>>>>>> c710bd79357ce2b3736b6624c411dd60e65474f9
+
 
 		HttpSession session = request.getSession();
-		if(initialLoad!=null){
-			System.out.println(presidentDAO.getPresident(1));
-			session.setAttribute("currentPresident", presidentDAO.getPresident(1));
-			
-		}
+
 		if (session.getAttribute("currentPresident") == null) {
 			// first time
 			session.setAttribute("currentlyDisplayedPresidentTermNumber", "1");
