@@ -1,6 +1,7 @@
 package servlets;
 
 import java.io.IOException;
+import java.time.LocalDate;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -42,12 +43,16 @@ public class PresidentServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 
 		if (session.getAttribute("currentPresident") == null) {
+
 			// first time
 			session.setAttribute("currentlyDisplayedPresidentTermNumber", "1");
 			int termNumber = Integer.valueOf((String)session.getAttribute("currentlyDisplayedPresidentTermNumber"));
-			session.setAttribute("currentPresident", presidentDAO.getPresident(termNumber));
-			President president = presidentDAO.getPresident(termNumber);
-			System.out.println(president.getName());
+//			session.setAttribute("currentPresident", presidentDAO.getPresident(termNumber));
+			President president = new President(1, "George Washington", "Independent"
+					, LocalDate.of(1789, 4, 30), LocalDate.of(1797, 3, 4)
+					, "//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/800px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+					, "Contrary to popular belief	 the countryâ€™s first president had dentures made of gold	 ivory	 lead	 and animal teeth.");
+			session.setAttribute("currentPresident", president);
 		}
 		request.getRequestDispatcher("/display.jsp").forward(request, response);
 	}
