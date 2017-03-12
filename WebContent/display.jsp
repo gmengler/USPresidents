@@ -4,9 +4,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 <head>
- <link rel = "stylesheet"
+ <!-- <link rel = "stylesheet"
    type = "text/css"
-   href = "StyleSheet.css" />
+   href = "StyleSheet.css" /> -->
+   <link href="StyleSheet.css" rel="stylesheet" type="text/css">
+   
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>U.S. Presidents</title>
 </head>
