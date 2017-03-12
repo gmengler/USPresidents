@@ -14,8 +14,13 @@
 <body>
 	<H1 id="header">UNITED STATES PRESIDENTS</H1>
 	<form action="Presidents.do" method="POST">
+	<c:choose>
+  <c:when test="${not empty termNumberError}">
+  invalid term number<br>
+  </c:when>
+  </c:choose>
 			<label>Search by Term Number: <input type="text"
-			name="termNumber">    <input type="submit" value="submit" name="getByTermNumber">
+			name="termNumber">  <input type="submit" value="submit" name="getByTermNumber">
 		</label> <br>
 	<h2>NAVIGATION</h2>
 		<button class="picture" type="submit" name="previous" > <img src = "http://www.iconninja.com/files/242/667/718/left-black-arrow-icon.png" ></button>
