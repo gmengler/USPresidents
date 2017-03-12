@@ -40,10 +40,16 @@ public class PresidentServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String initialLoad = request.getParameter("load");
 		ServletContext context = getServletContext();
 		PresidentDAO stockDAO = (PresidentDAO)context.getAttribute("PresidentDAO");
 
 		HttpSession session = request.getSession();
+		if(initialLoad!=null){
+			System.out.println(presidentDAO.getPresident(1));
+			session.setAttribute("currentPresident", presidentDAO.getPresident(1));
+			
+		}
 		if (session.getAttribute("currentPresident") == null) {
 			// first time
 			session.setAttribute("currentPresident", presidentDAO.getNextPresident());
