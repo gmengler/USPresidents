@@ -14,6 +14,12 @@
 <body>
 	<H1 id="header">UNITED STATES PRESIDENTS</H1>
 	<form action="Presidents.do" method="POST">
+			<label>Search by Term Number: <input type="text"
+			name="termNumber">    <input type="submit" value="submit" name="getByTermNumber">
+		</label> <br>
+	<h2>	NAVIGATION</h2>
+		<button class="picture" type="submit" name="previous" > <img src = "http://www.iconninja.com/files/259/183/804/backward-arrow-blue-icon.png" ></button>
+		<button class="picture" type="submit" name="next" > <img src="http://www.iconninja.com/files/515/987/819/forward-arrow-next-icon.png"></button>
 	
 	<div>
 		<table>
@@ -30,15 +36,18 @@
 				</td>
 				<td><img class ="resize" src="${currentPresident.picURL}" /></td>
 			</tr>
-		</table>
+		
 	</div>
-				<td><button class ="picture" type="submit" name="previous" > <img src = "http://www.iconninja.com/files/259/183/804/backward-arrow-blue-icon.png" ></button></td>
-				<td><button class ="picture" type="submit" name="next" > <img src="http://www.iconninja.com/files/515/987/819/forward-arrow-next-icon.png"></button></td>
+</table>
 
-		<label>Search by Term Number: <input type="text"
-			name="termNumber">    <input type="submit" value="submit" name="getByTermNumber">
-		</label>
+		
+	
+		
 
 	</form>
+	
+	
+
+	
 </body>
 </html>

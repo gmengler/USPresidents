@@ -10,6 +10,7 @@ html {
 
 li {
 	color: green;
+	list-style-type: none;
 }
 
 label {
@@ -34,4 +35,5 @@ label {
 
 .picture {
 	background-size: cover;
+
 }
