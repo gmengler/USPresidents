@@ -15,15 +15,15 @@
 	<H1>UNITED STATES PRESIDENTS</H1>
 	<form action="Presidents.do" method="POST">
 
-		<img src="${currentPresident.picURL}" />
+		<img class ="resize" src="${currentPresident.picURL}" />
 
 		<ul>
 			<li>Name: ${currentPresident.name}</li>
 			<li>TermNumber: ${currentPresident.termNumber}</li>
-			<li>Party :${currentPresident.party}</li>
-			<li>TermLength: ${currentPresident.termBeginDate}
+			<li>Party: ${currentPresident.party}</li>
+			<li>TermLength: From: ${currentPresident.termBeginDate} To:
 				${currentPresident.termEndDate}</li>
-			<li>Interesting Fact:${currentPresident.fact}</li>
+			<li>Interesting Fact: ${currentPresident.fact}</li>
 		</ul>
 
 		<label>Search by Term Number: <input type="text"
