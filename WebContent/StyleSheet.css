@@ -1,35 +1,40 @@
 html {
-	background-image:
-		url("https://thechive.files.wordpress.com/2012/10/hurricane-guard-unknown-tomb-920-6.jpg?quality=85&strip=info&w=920");
+	background-image: url("background.jpg");
 	background-size: cover;
-	
+}
+
+#header {
+	color: white;
+	text-align: center;
 }
 
 li {
-    color: green;
-
+	color: green;
+	list-style-type: none;
 }
 
 label {
 	color: green;
 }
 
-
-
 .resize {
-	    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
 }
 
 .resize {
-	
-    width: 300px;
-    height: auto;
+	width: 300px;
+	height: auto;
 }
-.picture{
-	
+
+.picture {
 background-size: cover;
+   width:150px;
+   height:150px;
 }

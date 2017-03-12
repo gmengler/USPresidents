@@ -12,26 +12,43 @@
 </head>
 
 <body>
-	<H1>UNITED STATES PRESIDENTS</H1>
+	<H1 id="header">UNITED STATES PRESIDENTS</H1>
 	<form action="Presidents.do" method="POST">
-
-		<img class ="resize" src="${currentPresident.picURL}" />
-<button class ="picture" type="submit" name="previous" > <img src = "http://www.iconninja.com/files/259/183/804/backward-arrow-blue-icon.png" ></button>
-<button class ="picture" type="submit" name="next" > <img src="http://www.iconninja.com/files/515/987/819/forward-arrow-next-icon.png"></button>
-
-		<ul>
-			<li>Name: ${currentPresident.name}</li>
-			<li>TermNumber: ${currentPresident.termNumber}</li>
-			<li>Party: ${currentPresident.party}</li>
-			<li>TermLength: From: ${currentPresident.termBeginDate} To:
-				${currentPresident.termEndDate}</li>
-			<li>Interesting Fact: ${currentPresident.fact}</li>
-		</ul>
-
-		<label>Search by Term Number: <input type="text"
+			<label>Search by Term Number: <input type="text"
 			name="termNumber">    <input type="submit" value="submit" name="getByTermNumber">
-		</label>
+		</label> <br>
+	<h2>NAVIGATION</h2>
+		<button class="picture" type="submit" name="previous" > <img src = "http://www.iconninja.com/files/242/667/718/left-black-arrow-icon.png" ></button>
+		<button class="picture" type="submit" name="next" > <img src="http://www.iconninja.com/files/925/250/422/right-arrow-icon.png"></button>
+	
+	<div>
+		<table>
+			<tr>
+				<td>
+				<ul>
+					<li>Name: ${currentPresident.name}</li>
+					<li>TermNumber: ${currentPresident.termNumber}</li>
+					<li>Party: ${currentPresident.party}</li>
+					<li>TermLength: From: ${currentPresident.termBeginDate} To:
+						${currentPresident.termEndDate}</li>
+					<li>Interesting Fact: ${currentPresident.fact}</li>
+				</ul>
+				</td>
+				<td><img class ="resize" src="${currentPresident.picURL}" /></td>
+			</tr>
+		
+	
+</table>
+	</div>
+
+		
+	
+		
 
 	</form>
+	
+	
+
+	
 </body>
 </html>
