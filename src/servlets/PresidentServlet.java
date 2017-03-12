@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import data.President;
 import data.PresidentDAO;
 import data.PresidentDAOFileImpl;
 
@@ -45,6 +46,8 @@ public class PresidentServlet extends HttpServlet {
 			session.setAttribute("currentlyDisplayedPresidentTermNumber", "1");
 			int termNumber = Integer.valueOf((String)session.getAttribute("currentlyDisplayedPresidentTermNumber"));
 			session.setAttribute("currentPresident", presidentDAO.getPresident(termNumber));
+			President president = presidentDAO.getPresident(termNumber);
+			System.out.println(president.getName());
 		}
 		request.getRequestDispatcher("/display.jsp").forward(request, response);
 	}
