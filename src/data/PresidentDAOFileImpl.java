@@ -27,13 +27,12 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 			while ((line = buf.readLine()) != null) {
 				String[] param = line.split("	");
 				Integer termNumber = Integer.parseInt(param[0]);
-				String firstName = param[1];
-				String lastName = param[2];
-				String startTerm = param[3];
-				String endTerm = param[4];
-				String party = param[5];
-				String picURL = param[6];
-				String fact = param[7];
+				String name = param[1];
+				String startTerm = param[2];
+				String endTerm = param[3];
+				String party = param[4];
+				String picURL = param[5];
+				String fact = param[6];
 
 //				President p = new President();
 				presList.put(termNumber, pres);

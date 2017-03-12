@@ -6,8 +6,8 @@ public class President {
 	private int termNumber;
 	private String name;
 	private String party;
-	private LocalDate termBeginDate;
-	private LocalDate termEndDate;
+	private String termBeginDate;
+	private String termEndDate;
 	private String picURL;
 	private String fact;
 	/**
@@ -19,7 +19,7 @@ public class President {
 	 * @param picURL
 	 * @param fact
 	 */
-	public President(int termNumber, String name, String party, LocalDate termBeginDate, LocalDate termEndDate,
+	public President(int termNumber, String name, String party, String termBeginDate, String termEndDate,
 			String picURL, String fact) {
 		super();
 		this.termNumber = termNumber;
@@ -75,25 +75,25 @@ public class President {
 	/**
 	 * @return the termBeginDate
 	 */
-	public LocalDate getTermBeginDate() {
+	public String getTermBeginDate() {
 		return termBeginDate;
 	}
 	/**
 	 * @param termBeginDate the termBeginDate to set
 	 */
-	public void setTermBeginDate(LocalDate termBeginDate) {
+	public void setTermBeginDate(String termBeginDate) {
 		this.termBeginDate = termBeginDate;
 	}
 	/**
 	 * @return the termEndDate
 	 */
-	public LocalDate getTermEndDate() {
+	public String getTermEndDate() {
 		return termEndDate;
 	}
 	/**
 	 * @param termEndDate the termEndDate to set
 	 */
-	public void setTermEndDate(LocalDate termEndDate) {
+	public void setTermEndDate(String termEndDate) {
 		this.termEndDate = termEndDate;
 	}
 	/**
