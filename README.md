@@ -8,7 +8,7 @@ http://www.shaundashjian.com:8080/USPresidents
 The user can go through the list of all U.S. Presidents. The User can search by term number, go to the next or previous president.
 
 ## Technology
-The application uses the MVC architecture using JSP and servlets.
+The application uses the MVC architecture with JSP and servlets.
 
 1. **The DAO:**
 The DAO (Data Access Object) reads the input from a file and catches an exception if you try to type in a president other than presidents 1-45
