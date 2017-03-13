@@ -15,10 +15,13 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ropa+Sans"
+	rel="stylesheet">
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>U.S. Presidents</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
 </head>
 
 <body>
@@ -43,14 +46,16 @@
 				<form action="Presidents.do" method="POST">
 					<c:choose>
 						<c:when test="${not empty termNumberError}">
-  						<span class="text-danger"><strong>Invalid term number</strong></span><br>
+							<span class="text-danger"><strong>Invalid term
+									number</strong></span>
+							<br>
 						</c:when>
 					</c:choose>
-					<label class="standard">Search by Term Number: <input class="black" type="text"
-						name="termNumber"> 
-						<!-- <input type="submit" value="submit" name="getByTermNumber"> -->
-						
-						<button type="submit" class="btn btn-default" name="getByTermNumber">Search</button>
+					<label class="standard">Search by Term Number: <input
+						class="black" type="text" name="termNumber"> <!-- <input type="submit" value="submit" name="getByTermNumber"> -->
+
+						<button type="submit" class="btn btn-default"
+							name="getByTermNumber">Search</button>
 					</label>
 				</form>
 			</div>
@@ -70,12 +75,17 @@
 				<form class="standard" action="Presidents.do" method="POST">
 					<ul>
 						<li><span class="info">Name:</span> ${currentPresident.name}</li>
-						<li><span class="info">Term Number:</span> ${currentPresident.termNumber}</li>
-						<li><span class="info">Party:</span> ${currentPresident.party}</li>
+						<li><span class="info">Term Number:</span>
+							${currentPresident.termNumber}</li>
+						<li><span class="info">Party:</span>
+							${currentPresident.party}</li>
 						<li><span class="info">Presidency:</span></li>
-						<li><span class="info">From:</span> ${currentPresident.termBeginDate}</li>
-						<li><span class="info">To:</span> ${currentPresident.termEndDate}</li>
-						<li><span class="info">Interesting Fact:</span> ${currentPresident.fact}</li>
+						<li><span class="info">From:</span>
+							${currentPresident.termBeginDate}</li>
+						<li><span class="info">To:</span>
+							${currentPresident.termEndDate}</li>
+						<li><span class="info">Interesting Fact:</span>
+							${currentPresident.fact}</li>
 					</ul>
 				</form>
 			</div>
@@ -86,8 +96,7 @@
 			<div class="col-md-2"></div>
 		</div>
 
-		<br>
-		<br>
+		<br> <br>
 		<!-- Previous, Search by term number, Next -->
 		<div class="row">
 			<div class="col-md-1"></div>
@@ -101,14 +110,16 @@
 				<form action="Presidents.do" method="POST">
 					<c:choose>
 						<c:when test="${not empty termNumberError}">
-  						<span class="text-danger"><strong>Invalid term number</strong></span><br>
+							<span class="text-danger"><strong>Invalid term
+									number</strong></span>
+							<br>
 						</c:when>
 					</c:choose>
-					<label class="standard">Search by Term Number: <input class="black" type="text"
-						name="termNumber"> 
-						<!-- <input type="submit" value="submit" name="getByTermNumber"> -->
-						
-						<button type="submit" class="btn btn-default" name="getByTermNumber">Search</button>
+					<label class="standard">Search by Term Number: <input
+						class="black" type="text" name="termNumber"> <!-- <input type="submit" value="submit" name="getByTermNumber"> -->
+
+						<button type="submit" class="btn btn-default"
+							name="getByTermNumber">Search</button>
 					</label>
 				</form>
 			</div>
