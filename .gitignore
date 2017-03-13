@@ -3,6 +3,3 @@ src/.DS_Store
 build
 target
 bin
-.classpath
-.project
-.settings/
