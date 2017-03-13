@@ -11,10 +11,9 @@ The user could go through the list of all U.S. Presidents. The User could search
 The application uses the MVC architecture with JSP and servlets.
 
 1. **The DAO:**
-The DAO (Data Access Object) reads the input from a file and catches an exception if you try to type in a president other than presidents 1-45
-It also has a getPresident() method to get the president object.
+The DAO (Data Access Object) reads the data of all presidents from a file. It has a getPresident() method to get the president object to the servlet.
 2. **The Servlet:**
-The servlet gets the information from the DAO and maintains session-specific information per user. It manages which president is being presented based on termNumber with the current president variable. If the user goes past president 45 it goes back to president 1 and if the user goes below president 1 it move them to president 45.
+The servlet gets the President information from the DAO and maintains session-specific information per user. It manages which president is being presented based on termNumber with the current president variable. If the user goes past the last president it goes back to the first president and if the user goes below the first president it moves to the last.
 3. **The JSP:**
-The JSP uses [Bootstrap](http://getbootstrap.com). It makes the current president appear. It has a text box which allows you to search by term number as well as next and previous buttons.
+The JSP uses [Bootstrap](http://getbootstrap.com). It makes the current president appear. It has a text box which allows you to search by term number as well as next and previous buttons to scroll through.
 
