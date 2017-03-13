@@ -75,13 +75,13 @@ public class PresidentServlet extends HttpServlet {
 
 		if(request.getParameter("next")!= null){
 			termNumber++;
-			if (termNumber > 45) {
+			if (termNumber > presidentDAO.getAllPresidents().size()) {
 				termNumber = 1;
 			}
 		} else if(request.getParameter("previous")!= null){
 			termNumber--;
 			if (termNumber < 1) {
-				termNumber = 45;
+				termNumber = presidentDAO.getAllPresidents().size();
 			}
 		}
 		else if(request.getParameter("getByTermNumber")!= null){
