@@ -1,5 +1,5 @@
 # US Presidents
-A Java web application that displays information about all US presidents.
+A Java web application that displays important and interesting information about all US presidents.
 
 ## Application URL
 http://www.shaundashjian.com:8080/USPresidents
