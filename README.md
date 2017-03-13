@@ -1,4 +1,8 @@
 # USPresidents
+http://www.shaundashjian.com:8080/USPresidents
+
+Our team's application let's the user go through the list of all U.S. Presidents. The User can search by term number, go to the next president in order, and go to the previous president by term number.
+
 
 
 # The DAO
