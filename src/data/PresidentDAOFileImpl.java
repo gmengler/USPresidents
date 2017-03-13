@@ -21,7 +21,7 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 	}
 
 	private void loadPresidentsInHashMap() {
-		InputStream is = servletContext.getResourceAsStream("presidents.csv");
+		InputStream is = servletContext.getResourceAsStream("WEB-INF/presidents.csv");
 		try (BufferedReader buf = new BufferedReader(new InputStreamReader(is))) {
 			String line;
 			while ((line = buf.readLine()) != null) {
