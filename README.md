@@ -5,7 +5,7 @@ A Java web application that displays important and interesting information about
 http://www.shaundashjian.com:8080/USPresidents
 
 ## How to Use the Application
-The user can go through the list of all U.S. Presidents. The User can search by term number, go to the next or previous president.
+The user could go through the list of all U.S. Presidents. The User could search by term number, go to the next or previous president.
 
 ## Technology
 The application uses the MVC architecture with JSP and servlets.
