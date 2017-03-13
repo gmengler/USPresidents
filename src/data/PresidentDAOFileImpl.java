@@ -43,7 +43,7 @@ public class PresidentDAOFileImpl implements PresidentDAO {
 	}
 
 	@Override
-	public List<President> getAllPresidents() { // probably don't need
+	public List<President> getAllPresidents() {
 		return new ArrayList<>(presList.values());
 	}
 

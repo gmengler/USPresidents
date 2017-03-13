@@ -45,11 +45,6 @@ public class PresidentServlet extends HttpServlet {
 			// first time
 			session.setAttribute("currentlyDisplayedPresidentTermNumber", "1");
 			int termNumber = Integer.valueOf((String)session.getAttribute("currentlyDisplayedPresidentTermNumber"));
-//			President president = new President(1, "George Washington", "Independent"
-//					, "April 30, 1789", "March 4, 1797"
-//					, "//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/800px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
-//					, "Contrary to popular belief	 the countryâ€™s first president had dentures made of gold	 ivory	 lead	 and animal teeth.");
-//			session.setAttribute("currentPresident", president);
 			session.setAttribute("currentPresident", presidentDAO.getPresident(termNumber));
 		}
 		request.getRequestDispatcher("/display.jsp").forward(request, response);
