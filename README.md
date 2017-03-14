@@ -19,7 +19,7 @@ http://www.shaundashjian.com:8080/USPresidents
 * If the  user enters an invalid term number, an "Invalid term number" message is displayed and display defaults to George Washington
 
 ## Architecture and Technologies Used
-The application uses the MVC architecture with JSP and servlets.
+The application uses the [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) architecture with JSP and servlets.
 
 1. **The DAO:**
 The DAO (Data Access Object) reads the data of all presidents from a file and stored it in a HashMap. It provides a getPresident() method to pass a President object to the servlet.
