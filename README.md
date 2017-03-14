@@ -29,4 +29,4 @@ The servlet gets the President information from the DAO and maintains session-sp
 The JSP uses [Bootstrap](http://getbootstrap.com). It displays the current president picture and information. It has a text box and a Search button to search by term number as well as Next and Previous buttons to scroll through. If the  user enters an invalid term number, the JSP displays an "Invalid term number" message and defaults to dispaly George Washington.
 <hr>
 
-[Up](../README.md)
+[Up](README.md)
