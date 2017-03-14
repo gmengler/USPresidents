@@ -1,6 +1,6 @@
 # US Presidents
 A Java web application that displays important and interesting information about all US presidents. This was our week 6 project in the Skill Distillery Full-Stack Java Web Development Bootcamp.
-
+<hr>
 ![alt text](website.png "USPresidents")
 
 ## In This Document:
@@ -27,3 +27,6 @@ The DAO (Data Access Object) reads the data of all presidents from a file and st
 The servlet gets the President information from the DAO and maintains session-specific information per user to keep track of which president is currently displayed. If the user goes past the last president it goes back to the first president and if the user goes below the first president it moves to the last.
 3. **The JSP:**
 The JSP uses [Bootstrap](http://getbootstrap.com). It displays the current president picture and information. It has a text box and a Search button to search by term number as well as Next and Previous buttons to scroll through. If the  user enters an invalid term number, the JSP displays an "Invalid term number" message and defaults to dispaly George Washington.
+<hr>
+
+[Up](../README.md)
