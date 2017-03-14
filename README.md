@@ -4,9 +4,9 @@ A Java web application that displays important and interesting information about
 ![alt text](website.png "USPresidents")
 
 ## In This Document:
-1. (Application URL)[#application-url]
-2. (How to Use the Application)[#how-touse-the-application]
-3. (Architecture and Technologies Used)[#architecture-and-technologies-used]
+1. [Application URL](#application-url)
+2. [How to Use the Application](#how-touse-the-application)
+3. [Architecture and Technologies Used](#architecture-and-technologies-used)
 
 ## Application URL
 http://www.shaundashjian.com:8080/USPresidents
