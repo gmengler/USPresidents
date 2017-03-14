@@ -1,5 +1,11 @@
 # US Presidents
 A Java web application that displays important and interesting information about all US presidents. This was our week 6 project in the Skill Distillery Full-Stack Java Web Development Bootcamp.
+![alt text](website.png "USPresidents")
+
+## In This Document:
+1. (Application URL)[#application-url]
+2. (How to Use the Application)[#how-touse-the-application]
+3. (Architecture and Technologies Used)[#architecture-and-technologies-used]
 
 ## Application URL
 http://www.shaundashjian.com:8080/USPresidents
@@ -11,7 +17,7 @@ http://www.shaundashjian.com:8080/USPresidents
 * Enter a president term number and click Search to display the specific president
 * If the  user enters an invalid term number, an "Invalid term number" message is displayed and display defaults to George Washington
 
-## Technologies Used
+## Architecture and Technologies Used
 The application uses the MVC architecture with JSP and servlets.
 
 1. **The DAO:**
