@@ -1,6 +1,7 @@
 # US Presidents
 A Java web application that displays important and interesting information about all US presidents. This was our week 6 project in the Skill Distillery Full-Stack Java Web Development Bootcamp.
-![alt text](website.png "USPresidents")
+<br>
+(website.png "USPresidents")
 
 ## In This Document:
 1. (Application URL)[#application-url]
