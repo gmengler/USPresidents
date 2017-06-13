@@ -12,7 +12,7 @@ A Java web application that displays important and interesting information about
 http://www.shaundashjian.com:8080/USPresidents
 
 ## How to Use the Application
-* When first accessing the website, picture and information about president George Washington is displayed
+* When first accessing the website, picture and information about president George Washington are displayed
 * Click Next to display the next president
 * Click Previous to display the previous president
 * Enter a president term number and click Search to display the specific president
